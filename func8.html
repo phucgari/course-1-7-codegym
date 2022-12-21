@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="num1">
+<input type="number" id="num2">
+<button onclick="getNum()">click</button>
+
+</body>
+<script>
+  let num1
+  let num2
+  function getNum(){
+    num1=+document.getElementById("num1").value
+    num2=+document.getElementById("num2").value
+    compareAndAdd(num1,num2)
+  }
+  function compareAndAdd(num1,num2){
+    if(num1>num2){
+      alert("error: num1>num2")
+    }else{
+      alert(num1+num2)
+    }
+  }
+</script>
+</html>

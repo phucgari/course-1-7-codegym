@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" onchange="display(plus1(this.value))">
+<p id="result"></p>
+</body>
+<script>
+    function plus1(num){
+        num++
+        return num
+    }
+    function display(a){
+        document.getElementById("result").innerHTML=a
+    }
+</script>
+</html>

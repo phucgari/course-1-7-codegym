@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+  function isPrime(num){
+    let i
+    for(i=2;i<num;i++){
+      if(num%i==0){
+        return false
+      }
+    }
+    if(i==num){
+      return true
+    }
+  }
+  input=prompt("Nhập số")
+  output=isPrime(input)
+  if(output){
+    alert(input+" is prime")
+  }else{
+    alert(input+" is not prime")
+  }
+</script>
+</html>

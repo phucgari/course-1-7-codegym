@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>
+    <label>Fahrenheit</label>
+    <input type="number" placeholder="Fahrenheit" oninput="conv(this.value)">
+</p>
+<p>Celsius: <span id="output"></span></p>
+</body>
+<script>
+    function conv(val){
+        val=parseFloat(val)
+        document.getElementById("output").innerHTML=(val-32)/1.8
+    }
+</script>
+</html>

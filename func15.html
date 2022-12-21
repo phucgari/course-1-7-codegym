@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+  input=[3,6,3,6,4,3,6,3]
+
+  function isPalindrome(x){
+    let time=x.length/2
+    for (let i = 0; i < time; i++) {
+      if(x.pop()===x.shift()){
+        continue
+      }else{
+        return false
+      }
+    }
+    return true
+  }
+  alert(isPalindrome(input))
+</script>
+</html>

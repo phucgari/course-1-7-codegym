@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    star1=["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"]
+    star2=["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major" , "Leo"]
+    function starCall(input){
+        for(let i=0;i<star1.length;i++){
+            if (input===star1[i]){
+                return i
+            }
+        }
+        return -1
+    }
+    function starAppear(num){
+        if(num>=0){
+            alert(star2[num])
+        }
+        else{
+            alert("wrong code")
+        }
+    }
+    starAppear(starCall(prompt("enter star")))
+</script>
+</html>
